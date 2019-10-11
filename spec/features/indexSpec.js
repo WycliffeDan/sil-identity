@@ -27,8 +27,9 @@ describe('landing page', () => {
   });
 
   describe('unauthenticated', () => {
-    it('renders the expected components', done => {
-      done.fail();
+    it('renders the expected components', () => {
+      browser.assert.element('button#home', 'SIL Identity');
+      browser.assert.element('button#login', 'Login');
     });
   });
 });
