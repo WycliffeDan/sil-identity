@@ -30,6 +30,7 @@ describe('landing page', () => {
     it('renders the expected components', () => {
       browser.assert.element('button#home', 'SIL Identity');
       browser.assert.element('button#login', 'Login');
+      browser.assert.element('img.App-logo');
     });
   });
 });
