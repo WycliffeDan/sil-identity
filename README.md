@@ -33,6 +33,8 @@ To execute a single test suite:
 npx jasmine spec/features/indexSpec.js
 ```
 
+The details of how behavioural testing is incorporated into a bootstrapped `create-react-app` project are documented [here](https://libertyseeds.ca/2019/10/11/A-non-intrusive-behavioural-testing-approach-to-bootstrapped-React-in-Typescript/).
+
 ## Development
 
 Run dev server:
