@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:test": "npx env-path -p .env.test react-scripts build",
+    "e2e": "npm run build:test && npx jasmine"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +34,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "env-path": "^1.0.7",
+    "jasmine": "^3.5.0",
+    "morgan": "^1.9.1",
+    "zombie": "^6.1.4"
   }
 }
